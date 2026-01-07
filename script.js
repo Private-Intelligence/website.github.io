@@ -368,9 +368,9 @@ if (document.readyState === 'loading') {
 
 // Log creative message
 console.log('%c✨ Welcome to changyu.ai ',
-    'background: #d4af37; color: #0a0a0a; padding: 12px 24px; font-size: 16px; font-weight: bold; font-family: "Playfair Display", serif;'
+    'background: #c0c5ce; color: #0a1929; padding: 12px 24px; font-size: 16px; font-weight: bold; font-family: "Playfair Display", serif;'
 );
 
 console.log('%cBuilt with care using Editorial Modernism design principles',
-    'color: #999; font-size: 12px; font-family: "IBM Plex Mono", monospace;'
+    'color: #9fa5b0; font-size: 12px; font-family: "IBM Plex Mono", monospace;'
 );
