@@ -3,204 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website showcasing projects and skills">
-    <title>My Portfolio</title>
+    <meta name="description" content="Changyu — Portfolio of creative work, technical expertise, and innovative projects">
+    <title>Changyu — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Portfolio</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">CY</a>
+            <div class="nav-links">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
+    <section class="hero" id="home">
+        <div class="hero-grid">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
-                <p class="hero-subtitle">Full Stack Developer | Problem Solver | Tech Enthusiast</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <div class="hero-label">
+                    <span class="label-text">Portfolio 2025</span>
+                    <span class="label-divider"></span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line" data-delay="0">Changyu</span>
+                    <span class="title-line title-line--italic" data-delay="100">Hu</span>
+                </h1>
+                <p class="hero-description" data-delay="200">
+                    Designer, developer, and creative technologist crafting digital experiences at the intersection of art and engineering.
+                </p>
+                <div class="hero-cta" data-delay="300">
+                    <a href="#work" class="btn-primary">
+                        <span>View Selected Work</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-meta">
+                <div class="meta-item" data-delay="100">
+                    <span class="meta-label">Location</span>
+                    <span class="meta-value">San Francisco, CA</span>
+                </div>
+                <div class="meta-item" data-delay="150">
+                    <span class="meta-label">Focus</span>
+                    <span class="meta-value">Full-Stack Development</span>
+                </div>
+                <div class="meta-item" data-delay="200">
+                    <span class="meta-label">Status</span>
+                    <span class="meta-value">Available for Projects</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
+    <section class="section about" id="about">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-grid">
             <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate developer with a love for creating elegant solutions to complex problems. With experience in modern web technologies, I specialize in building responsive and user-friendly applications.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                <p class="about-lead">
+                    I create digital products that balance aesthetic ambition with technical precision.
+                </p>
+                <p class="about-text">
+                    With a background spanning design, engineering, and product development, I specialize in building interfaces that aren't just functional—they're memorable. Every project is an opportunity to push boundaries and challenge conventions.
+                </p>
+                <p class="about-text">
+                    My work lives at the intersection of form and function, where thoughtful design meets robust code. I believe the best digital experiences are those that feel inevitable—simple on the surface, sophisticated underneath.
+                </p>
+            </div>
+            <div class="about-skills">
+                <div class="skill-group">
+                    <h3 class="skill-category">Design</h3>
+                    <ul class="skill-list">
+                        <li>UI/UX Design</li>
+                        <li>Design Systems</li>
+                        <li>Brand Identity</li>
+                        <li>Prototyping</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-category">Development</h3>
+                    <ul class="skill-list">
+                        <li>React & Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-category">Tools</h3>
+                    <ul class="skill-list">
+                        <li>Figma</li>
+                        <li>Webflow</li>
+                        <li>Three.js</li>
+                        <li>Framer Motion</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-node"></i>
-                    <h3>Node.js</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-git-alt"></i>
-                    <h3>Git</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Databases</h3>
-                </div>
-            </div>
+    <!-- Work Section -->
+    <section class="section work" id="work">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">Selected Work</h2>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250" alt="Project 1">
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Name 1</h3>
-                        <p>A brief description of your project, highlighting the key features and technologies used.</p>
+        <div class="work-list">
+            <article class="project">
+                <div class="project-number">01</div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3 class="project-title">Neural Canvas</h3>
+                        <p class="project-description">
+                            An AI-powered creative platform that transforms text prompts into generative art. Built with React, Python, and TensorFlow.
+                        </p>
                         <div class="project-tags">
                             <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250" alt="Project 2">
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Name 2</h3>
-                        <p>Another amazing project showcasing your skills in building modern web applications.</p>
-                        <div class="project-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">Flask</span>
-                            <span class="tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">WebGL</span>
                         </div>
                     </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project →</a>
+                        <a href="#" class="project-link">GitHub →</a>
+                    </div>
                 </div>
+                <div class="project-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop" alt="Neural Canvas Project">
+                    </div>
+                </div>
+            </article>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250" alt="Project 3">
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Name 3</h3>
-                        <p>An innovative solution demonstrating your problem-solving abilities and technical expertise.</p>
+            <article class="project">
+                <div class="project-number">02</div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3 class="project-title">Meridian Analytics</h3>
+                        <p class="project-description">
+                            Real-time data visualization dashboard for enterprise analytics. Features custom charts, live updates, and predictive modeling.
+                        </p>
                         <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">API</span>
-                            <span class="tag">CSS</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Redis</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project →</a>
+                        <a href="#" class="project-link">GitHub →</a>
                     </div>
                 </div>
-            </div>
+                <div class="project-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Meridian Analytics Project">
+                    </div>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project-number">03</div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3 class="project-title">Kinetic Typography</h3>
+                        <p class="project-description">
+                            Experimental web experience exploring motion, typography, and interaction. Winner of Awwwards Site of the Day.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">WebGL</span>
+                            <span class="tag">GSAP</span>
+                            <span class="tag">Three.js</span>
+                            <span class="tag">Shaders</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project →</a>
+                        <a href="#" class="project-link">GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop" alt="Kinetic Typography Project">
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="mailto:your.email@example.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+    <section class="section contact" id="contact">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">Contact</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-text">
+                <h3 class="contact-heading">Let's create something extraordinary.</h3>
+                <p class="contact-description">
+                    I'm currently available for select freelance projects and full-time opportunities. Whether you have a specific project in mind or just want to connect, I'd love to hear from you.
+                </p>
+            </div>
+            <div class="contact-methods">
+                <a href="mailto:hello@changyu.ai" class="contact-method">
+                    <span class="method-label">Email</span>
+                    <span class="method-value">hello@changyu.ai</span>
+                </a>
+                <a href="https://linkedin.com/in/changyuhu" class="contact-method" target="_blank" rel="noopener">
+                    <span class="method-label">LinkedIn</span>
+                    <span class="method-value">@changyuhu</span>
+                </a>
+                <a href="https://github.com/changyuhu" class="contact-method" target="_blank" rel="noopener">
+                    <span class="method-label">GitHub</span>
+                    <span class="method-value">@changyuhu</span>
+                </a>
+                <a href="https://twitter.com/changyuhu" class="contact-method" target="_blank" rel="noopener">
+                    <span class="method-label">Twitter</span>
+                    <span class="method-value">@changyuhu</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Changyu Hu. All rights reserved.</p>
+            <p class="footer-credits">Designed & developed with care.</p>
         </div>
     </footer>
 
